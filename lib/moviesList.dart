@@ -58,7 +58,7 @@ class MoviesState extends State<Movies>{
                           ),
                       Container(
                         height:MediaQuery.of(context).size.height * .05,
-                        width: MediaQuery.of(context).size.width * .75,
+                        width: MediaQuery.of(context).size.width * .72,
                         child: TextField(
                           controller: searchText,
                           onSubmitted: (searchText) async {                            //Search
@@ -159,7 +159,7 @@ class MoviesState extends State<Movies>{
                                child: Text(searchFlag?searchList[index].title:movies.results[index].title,style: TextStyle(
                                  color: Colors.white,
                                  fontWeight: FontWeight.bold,
-                                 fontSize: 18
+                                 fontSize: 16
                                ),),
                              ),
                         ),
@@ -167,7 +167,8 @@ class MoviesState extends State<Movies>{
                           width: MediaQuery.of(context).size.width*.5,
                           margin: EdgeInsets.fromLTRB(0,0,0,MediaQuery.of(context).size.height*.035),
                                   child: Text('Movie',style: TextStyle(    // Static for now, It has no corresponding field
-                                    color: Colors.white
+                                    color: Colors.white,
+                                    fontSize: 10
                                   ),),),
                       ],
                     ),

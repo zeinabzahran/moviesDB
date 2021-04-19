@@ -18,7 +18,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Movies(movies: movies,)
+      home: Movies(movies: movies,),
+      debugShowCheckedModeBanner: false,
+
     );
   }
 }
